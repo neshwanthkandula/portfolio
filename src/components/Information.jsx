@@ -1,7 +1,6 @@
 import React from 'react'
 import PhotoCard from './PhotoCard'
 
-const linked = import.meta.env.VITE_LINKED
 
 const Information = () => {
   return (
@@ -52,7 +51,7 @@ export function Linkedin() {
   return (
     <div>
       <a
-        href={linked}
+        href="https://www.linkedin.com/in/neshwanthkandula/"
         className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
       >
         <svg

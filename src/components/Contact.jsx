@@ -1,7 +1,6 @@
 import React from 'react'
 import { Mail, Linkedin , Github } from './Information'
 
-const linked = import.meta.env.VITE_LINKED
 
 const ContactUs = () => {
   return (
@@ -24,7 +23,7 @@ const ContactUs = () => {
                         <div><Linkedin /></div>
                         <div>
                             <a
-                                href={linked}
+                                href="https://www.linkedin.com/in/neshwanthkandula/"
                                 target="_blank"
                                 className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
                             >LinkedIn</a>
