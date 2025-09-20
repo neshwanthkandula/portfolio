@@ -29,8 +29,8 @@ const projects = [
         tags: ["NextJs | TurboRepo | Prisma | TypeScript | TailwindCSS"],
         discription :`Developed a full-stack digital wallet platform supporting P2P transfers, detailed transaction history, 
                     and real-time balance tracking. Added on-ramp functionality for wallet top-ups and implemented a 
-                    temporary webhook for payment event simulation. 
-    B               uilt with Next.js, Turborepo, and Prisma to achieve a scalable, modular architecture and a responsive, user-friendly interface`,
+                    temporary webhook for payment event simulation.
+                    Built with Next.js, Turborepo, and Prisma to achieve a scalable, modular architecture.`,
         github : "https://github.com/neshwanthkandula/Paytm-Wallet",
         link:pay
     },

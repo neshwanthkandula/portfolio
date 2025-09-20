@@ -1,6 +1,8 @@
 import React from 'react'
 import PhotoCard from './PhotoCard'
 
+const linked = import.meta.env.VITE_LINKED
+
 const Information = () => {
   return (
     <div className='p-5 pl-60 pr-60 flex justify-between  mt-40'>
@@ -50,7 +52,7 @@ export function Linkedin() {
   return (
     <div>
       <a
-        href="javascript:;"
+        href={linked}
         className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
       >
         <svg

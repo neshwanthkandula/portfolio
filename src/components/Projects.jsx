@@ -27,7 +27,7 @@ const PROJECTS = () => {
 export default PROJECTS
 
 function CARD({project}){
-    return <div className=' w-120 shadow-[0_0_15px_rgba(0,0,0,0.2)] p-10 rounded-lg bg-white flex flex-col gap-4'>
+    return <div className=' w-122 shadow-[0_0_15px_rgba(0,0,0,0.2)] p-10 rounded-lg bg-white flex flex-col gap-4'>
         <div className=''>
             <img src={project.image} alt="project screenshot" className='<img
   src={project.image}

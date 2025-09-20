@@ -1,5 +1,8 @@
 import React from 'react'
 import { Mail, Linkedin , Github } from './Information'
+
+const linked = import.meta.env.VITE_LINKED
+
 const ContactUs = () => {
   return (
     <div >
@@ -11,17 +14,17 @@ const ContactUs = () => {
                         <div><Mail/></div>
                         <div>
                             <a
-                                href="#"
+                                href="mailto:neshwanthneshukandula648@gmail.com"
                                 target="_blank"
                                 className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
-                            >neshwanthneshukandula648@gmail.com</a>
+                            >neshwanthneshukandula648@gmail.com</a> 
                         </div>
                     </div>
                     <div className='flex text-2xl items-center'>
                         <div><Linkedin /></div>
                         <div>
                             <a
-                                href="#"
+                                href={linked}
                                 target="_blank"
                                 className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
                             >LinkedIn</a>
@@ -31,7 +34,7 @@ const ContactUs = () => {
                         <div><Github Link={"#"}/></div>
                         <div>
                             <a
-                                href="#"
+                                href="https://github.com/neshwanthkandula"
                                 target="_blank"
                                 className="p-2 rounded-lg flex items-center justify-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
                             >Github.com</a>
