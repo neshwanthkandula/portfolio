@@ -1,12 +1,19 @@
 import React from 'react'
 import SkillCard from "../components/SkillCard"
+
 const Skills = () => {
   return (
-    <div className='p-5 pl-60 pr-60 mt-40 flex flex-col gap-4 justify-center items-center '>
-        <div className='px-5 font-bold text-4xl text-blue-500 underline underline-offset-10 '>Skills</div>
-        <div className='mt-10'>
-          <SkillCard/>
-        </div>
+    <div className="px-4 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-32 flex flex-col gap-6 justify-center items-center">
+      
+      {/* Heading */}
+      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 underline underline-offset-8">
+        Skills
+      </div>
+
+      {/* Skills Cards */}
+      <div className="mt-8 w-full flex justify-center">
+        <SkillCard />
+      </div>
     </div>
   )
 }

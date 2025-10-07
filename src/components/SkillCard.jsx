@@ -4,14 +4,12 @@ import { SectionWrapper } from '../App.jsx'
 
 export const SkillCard = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2 gap-6">
+    <div className="w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map((e, i) => (
-          <div key={i}>
-            <SectionWrapper key={i} delay={i * 0.3}>
-              <CARD image={e.image} tittle={e.name} />
-            </SectionWrapper>
-          </div>
+          <SectionWrapper key={i} delay={i * 0.3}>
+            <CARD image={e.image} title={e.name} />
+          </SectionWrapper>
         ))}
       </div>
     </div>
@@ -20,11 +18,15 @@ export const SkillCard = () => {
 
 export default SkillCard
 
-function CARD({image, tittle}){
-  return <div className="flex gap-2 px-40 py-5 bg-white rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.2)] items-center">
-    <div  className="w-7 h-7 text-blue-600"><img src={image} alt="logo"/></div>
-    <div className='font-semibold'>{tittle}</div>
-  </div>
+function CARD({ image, title }) {
+  return (
+    <div className="flex gap-3 px-4 sm:px-6 md:px-8 py-4 bg-white rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.15)] items-center hover:shadow-[0_0_20px_rgba(0,0,0,0.25)] transition duration-300">
+      <div className="w-8 h-8 flex-shrink-0">
+        <img src={image} alt="logo" className="w-full h-full object-contain" />
+      </div>
+      <div className="font-medium text-gray-800 text-sm sm:text-base md:text-lg">
+        {title}
+      </div>
+    </div>
+  )
 }
-
-

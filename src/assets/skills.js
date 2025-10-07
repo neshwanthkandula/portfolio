@@ -5,7 +5,8 @@ import react_l from '../assets/logos/react.png'
 import mongodb from '../assets/logos/mongodb.jpg'
 import docker from '../assets/logos/docker.png'
 import html from '../assets/logos/html.png'
-
+import aws from '../assets/logos/aws.png'
+import kubernetes from '../assets/logos/kubernetes.png'
 import js from '../assets/logos/js-bold.png'
 import turbo from '../assets/logos/turbo.png'
 import tailwind from '../assets/logos/tailwind.jpeg'
@@ -22,6 +23,10 @@ const data =
     name: "Express",
   },
   {
+    image: turbo,
+    name: "Turbo Repo"
+  },
+  {
     image: nextjs,
     name: "NextJS"
   },
@@ -30,24 +35,28 @@ const data =
     name: "ReactJS"
   },
   {
-    image : mongodb,
-    name: "Mongo DB",
+    image:js,
+    name: "JavaScript"
+  },
+  {
+    image:aws,
+    name: "AWS"
   },
   {
     image : docker,
     name: "Docker",
   },
   {
+    image:kubernetes,
+    name:"Kubernetes"
+  },
+  {
+    image : mongodb,
+    name: "Mongo DB",
+  },
+  {
     image: html,
     name: "HTML5"
-  },
-  {
-    image:js,
-    name: "JavaScript"
-  },
-  {
-    image: turbo,
-    name: "Turbo Repo"
   },
   {
     image:tailwind,
