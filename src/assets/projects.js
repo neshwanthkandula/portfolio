@@ -3,6 +3,7 @@ import paytm from '../assets/projects/paytm.png'
 import backpack from '../assets/projects/backpack.png'
 import portfolio from '../assets/projects/portfolio.png'
 import grocery from '../assets/projects/grocery.png'
+import Lovable from "../assets/projects/Lovable.png"
 
 const zap = import.meta.env.VITE_ZAPIER
 const back = import.meta.env.VITE_BACKPACK
@@ -36,7 +37,7 @@ const projects = [
     },
     {
         image : backpack,
-        tittle:"BackPack Exchange",
+        tittle:"Asset Exchange",
         tags: ["WebsSocket Server | NextJs | Docker | Tailwind "],
         discription : `A real-time trading platform inspired by Backpack Exchange, designed for seamless item exchange without cryptocurrency. 
                         Built with Next.js and styled using Tailwind CSS.
@@ -45,6 +46,14 @@ const projects = [
                         Designed with a focus on performance, modular architecture, and easy future feature expansion.`,
         github : "https://github.com/neshwanthkandula/exchange-project",
         link:back
+    },
+    {
+        image : Lovable,
+        tittle:"Lovable",
+        tags: ["AI Integration | TRPC | e2b"],
+        discription : `I built an AI-powered Lovable-inspired landing page generator using Next.js, tRPC, Inngest, E2B, and shadcn/ui. Users can enter a prompt and instantly generate a fully structured landing page with modern, responsive UI components. Inngest powers the async generation workflow, while E2B securely executes code in isolated sandboxes. The project highlights my ability to build AI-driven UI tools and integrate advanced full-stack systems.`,
+        github : "https://github.com/neshwanthkandula/lovable-app",
+        link: "https://lovable-app-one.vercel.app/"
     },
     {
         image : grocery,
@@ -69,7 +78,7 @@ const projects = [
                        The design emphasizes accessibility and responsiveness, ensuring a seamless experience across devices.`,
         github : "https://github.com/neshwanthkandula/Zapier-Project",
         link:portf
-    },
+    }
 
 ]
 

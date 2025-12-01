@@ -14,7 +14,6 @@ export function SectionWrapper({ children, id, delay = 0 }) {
     <section
       id={id}
       ref={ref}
-      style={{ transitionDelay: `${delay}s` }}
       className={`fade-drop ${isVisible ? "visible" : ""}`}
     >
       {children}
@@ -42,8 +41,9 @@ function App() {
           <Skills />
         </SectionWrapper>
 
-        <section id="Projects"> <Projects /></section>
-        
+        <SectionWrapper id="Projects">
+  <Projects />
+</SectionWrapper>
 
         <SectionWrapper id="contactus">
           <ContactUs />
